@@ -11,21 +11,53 @@ body{
 
 .header{
   display: flex;
-  margin-top: 20px;
+  margin-top: 1em;
   justify-content: space-around;
 }
 
+.nav{
+  display: flex;
+  justify-content: center;
+  color: rgba(255,255,255,.5);
+  margin: 0.5em;
+}
 .header_logo{
   color:rgb(129, 8, 241);
 }
 
-.search_form{
+.nav_browse{
+  padding-right: 4em;
+  font-size: 0.8rem;
 }
-
+.nav_favorites{
+  padding-left: 4em;
+  font-size: 0.8rem;
+}
 .search{
   box-sizing: border-box;
   border-radius: 10px;
-  padding: 10px;
+  padding: 0.5rem;
 
 }
 
+.container{
+  background-color: rgb(41, 32, 22);
+  margin-block: 1rem;  
+  padding: 0.5rem;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  align-items: center;
+  gap: 2rem;
+  
+}
+
+.music-card{
+  background-color: aqua;
+  height: 500px;
+  border: 2px solid rgba(255,255,255,.5);
+  padding: 10px;
+}
+
+.music-card img {
+  max-width: 250px;
+}
