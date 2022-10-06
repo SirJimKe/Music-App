@@ -1,10 +1,13 @@
 import React from 'react'
 
-const MusicCard = () => {
+const MusicCard = ({ song }) => {
   return (
-
     <>
-        <div className='music-card'>My Cool Music</div>
+        <div className='music-card'>
+            <img src={song.images} alt={song.title}/>
+            <h4> {song.title} </h4>
+            <p>{song.subtitle} </p>
+        </div>
     </>    
   )
 }
