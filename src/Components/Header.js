@@ -1,15 +1,20 @@
 import React from "react";
 import Searchbar from "./Searchbar";
+import { NavLink } from "react-router-dom";
 
-const Header = () => {
+const Header = ({ endPoint, onChangeHandler, submitHandler }) => {
 
     return (
-        <div className="header">
+        <header className="header">
             <div className="header_logo">           
-                <h1>J-MusiQ</h1>
+                <NavLink exact to="/">J-MusiQ</NavLink>
             </div>
-        <Searchbar />
-        </div>
+            <Searchbar 
+                endPoint = {endPoint} 
+                onChangeHandler={onChangeHandler} 
+                submitHandler={submitHandler}
+            />
+        </header>
     );
 }
 

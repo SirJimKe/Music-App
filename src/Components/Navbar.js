@@ -1,13 +1,12 @@
-import React from 'react'
-import Browse from './Browse'
-import Favorites from './Favorites'
+import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
   return (
-    <div className='nav'>
-        <Browse />
-        <Favorites/>    
-    </div>
+    <nav>
+      <NavLink to="/browse" >Browse</NavLink>
+      <NavLink to="/favorites" >Favorites</NavLink>
+    </nav>
   )
 }
 

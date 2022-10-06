@@ -14,30 +14,50 @@ body{
   margin-top: 1em;
   justify-content: space-around;
 }
-
+a{
+  text-decoration: none;
+  cursor: pointer;
+}
 .nav{
   display: flex;
   justify-content: center;
   color: rgba(255,255,255,.5);
   margin: 0.5em;
 }
-.header_logo{
+.header_logo a{
   color:rgb(129, 8, 241);
+  font-size: 2rem;
+  font-weight: bold;  
+  transition: 1s;
 }
 
-.nav_browse{
-  padding-right: 4em;
-  font-size: 0.8rem;
+nav {
+  text-align: center;
 }
-.nav_favorites{
-  padding-left: 4em;
-  font-size: 0.8rem;
+nav a {
+  font-size: 1.5rem;
+  display: inline-block;
+  transition: 0.1s;
+  margin: 1rem 3rem;
+  color:rgb(162, 161, 167) 
 }
+
+nav a:hover{
+  color: rgb(129, 8, 241);
+}
+
+a:active{
+  color: rgb(129, 8, 241);
+}
+
 .search{
   box-sizing: border-box;
   border-radius: 10px;
   padding: 0.5rem;
 
+}
+.search:hover{
+  background-color: rgb(233, 218, 247);
 }
 
 .container{

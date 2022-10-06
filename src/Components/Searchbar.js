@@ -1,10 +1,12 @@
 import React from 'react';
  
-const Searchbar = () => {
+const Searchbar = ({ endPoint, onChangeHandler, submitHandler }) => {
   return (
     <div>
-        <form>
+        <form onSubmit={submitHandler}>
             <input 
+                value={endPoint}
+                onChange={onChangeHandler}
                 className='search'
                 type="text"
                 name="search"
