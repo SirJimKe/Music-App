@@ -14,6 +14,12 @@ body{
   margin-top: 1em;
   justify-content: space-around;
 }
+.header h2 a{
+  color: white;
+}
+.header h2 a:hover{
+  color: rgb(129, 8, 241);
+}
 a{
   text-decoration: none;
   cursor: pointer;
@@ -45,7 +51,7 @@ nav a:hover{
   color: rgb(129, 8, 241);
 }
 
-a:active{
+nav a.active{
   color: rgb(129, 8, 241);
 }
 

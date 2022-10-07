@@ -10,6 +10,7 @@ import Favorites from './Components/Favorites';
 function App() {
 
   const [songs, setSongs] = useState([]);
+  const [show, setShow] = useState(false);
   const [endPoint, setEndPoint] = useState('');
 
   useEffect(()=>{
@@ -33,16 +34,18 @@ function App() {
       <Header 
         endPoint={endPoint}
         onChangeHandler= {onChangeHandler}
-        submitHandler={submitHandler}  
+        submitHandler={submitHandler} 
+        show={show}
+        setShow={setShow} 
       />
-      <Navbar />
+      <Navbar setShow={setShow} />
 
       <Switch>
         <Route exact path="/" >
           <Home />
         </Route>
         <Route path="/browse" >
-          <Browse songs={songs}/>
+          <Browse songs={songs}  />
         </Route>
         <Route path="/favorites">
           <Favorites />
