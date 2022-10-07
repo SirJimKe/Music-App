@@ -28,7 +28,6 @@ a{
   color:rgb(129, 8, 241);
   font-size: 2rem;
   font-weight: bold;  
-  transition: 1s;
 }
 
 nav {
@@ -69,6 +68,19 @@ a:active{
   gap: 2rem;
   min-height: 100vh;
   
+}
+
+.home{
+  text-align: center;
+  padding-top: 10rem;
+}
+
+.home h1{
+  margin: 2rem;
+  font-size: 3rem;
+}
+.home p{
+  font-size: 2rem;
 }
 
 .music-card{

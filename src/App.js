@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from 'react';
+import { Switch, Route} from "react-router-dom";
 import Header from './Components/Header';
 import './App.css';
 import Navbar from './Components/Navbar';
-import Container from './Components/Container';
+import Home from './Components/Home';
+import Browse from './Components/Browse';
+import Favorites from './Components/Favorites';
 
 function App() {
 
@@ -33,7 +36,18 @@ function App() {
         submitHandler={submitHandler}  
       />
       <Navbar />
-      <Container songs={songs}/>
+
+      <Switch>
+        <Route exact path="/" >
+          <Home />
+        </Route>
+        <Route path="/browse" >
+          <Browse songs={songs}/>
+        </Route>
+        <Route path="/favorites">
+          <Favorites />
+        </Route>
+      </Switch>
     </div>
   );
 }

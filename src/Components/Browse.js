@@ -1,11 +1,21 @@
 import React from 'react'
+import MusicCard from "./MusicCard"
 
-const Browse = () => {
+const Browse = ({songs}) => {
+  const musicList = songs.map((song)=>{
+    
+    return <MusicCard
+      key={song.id}
+      song={song}      
+    />
+  })
+
   return (
-    <div className='nav_browse'>
-        <h1>Browse</h1>
+    <div id="browse" className='container'>
+      {musicList}
     </div>
   )
 }
+
 
 export default Browse
