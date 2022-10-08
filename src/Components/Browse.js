@@ -3,10 +3,10 @@ import MusicCard from "./MusicCard"
 
 const Browse = ({songs}) => {
   const musicList = songs.map((song)=>{
-    
-    return <MusicCard
+      return <MusicCard
       key={song.id}
-      song={song}      
+      song={song}
+      id={song.id}      
     />
   })
 

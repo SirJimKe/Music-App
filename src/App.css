@@ -90,12 +90,31 @@ nav a.active{
 }
 
 .music-card{
-  height: 400px;
+  height: 420px;
   border: 2px solid rgba(255,255,255,.5);
   padding: 10px;
+  text-align: center;
+  
+}
+.music-details{
+  border: 2px solid rgba(255,255,255,.5);
+  padding: 10px;
+  text-align: center;
+  max-width: fit-content;
   
 }
 
 .music-card img {
   max-width: 100%;
+}
+
+.music-card label{
+  color: rgba(255,255,255,.5);
+  padding-left: 5px;
+  font-style: italic;
+}
+
+.music-card a{
+  color: rgba(255,255,255,.5);
+  text-decoration: underline;
 }

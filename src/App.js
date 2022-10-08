@@ -6,6 +6,7 @@ import Navbar from './Components/Navbar';
 import Home from './Components/Home';
 import Browse from './Components/Browse';
 import Favorites from './Components/Favorites';
+import MusicDetails from './MusicDetails';
 
 function App() {
 
@@ -44,11 +45,14 @@ function App() {
         <Route exact path="/" >
           <Home />
         </Route>
-        <Route path="/browse" >
+        <Route exact path="/browse" >
           <Browse songs={songs}  />
         </Route>
+        <Route path="/browse/:id" >
+          <MusicDetails  />
+        </Route>
         <Route path="/favorites">
-          <Favorites />
+          <Favorites songs={songs.filter(song=> song.isFavorite)}/>
         </Route>
       </Switch>
     </div>
