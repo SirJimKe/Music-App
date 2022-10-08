@@ -31,9 +31,14 @@ function App() {
     setEndPoint("");
   }
   const updateFavorite = (id, favorite) => {
-    console.log({id, favorite});
     setSongs(songs.map(song => id === song.id ? {...song, favorite} : song))
   }
+
+  const addSong =(newSong) => {
+    setSongs(...songs, newSong)
+  }
+
+
   return (
     <div className="App">
       <Header 
@@ -59,7 +64,7 @@ function App() {
           <Favorites songs={songs.filter(song=> song.favorite)} updateFavorite={updateFavorite} />
         </Route>
         <Route path="/addmusic">
-          <AddMusic />
+          <AddMusic addSong={addSong}/>
         </Route>
       </Switch>
     </div>
