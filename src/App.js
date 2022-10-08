@@ -30,6 +30,9 @@ function App() {
     setEndPoint("");
   }
 
+  const handleFavorite = (id, favorite=true) => {
+    setSongs(songs.map(song => id === song.id ? {...song, favorite} : song))
+  }
   return (
     <div className="App">
       <Header 
@@ -46,13 +49,13 @@ function App() {
           <Home />
         </Route>
         <Route exact path="/browse" >
-          <Browse songs={songs}  />
+          <Browse songs={songs} handleClick={handleFavorite}/>
         </Route>
         <Route path="/browse/:id" >
           <MusicDetails  />
         </Route>
         <Route path="/favorites">
-          <Favorites songs={songs.filter(song=> song.isFavorite)}/>
+          <Favorites songs={songs.filter(song=> song.favorite)} handleClick={id=>handleFavorite(id, false)} />
         </Route>
       </Switch>
     </div>

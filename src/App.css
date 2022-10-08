@@ -108,7 +108,7 @@ nav a.active{
   max-width: 100%;
 }
 
-.music-card label{
+.music-card p{
   color: rgba(255,255,255,.5);
   padding-left: 5px;
   font-style: italic;
