@@ -1,15 +1,36 @@
 import React from 'react'
 import {Link} from "react-router-dom"
 
-const MusicCard = ({ id, song, handleClick }) => {
+const MusicCard = ({ id, song, updateFavorite }) => {
+  
+  const { images, title, subtitle, favorite} = song;
+
+  const handleFavorite =(favorite) => {
+    fetch(`http://localhost:8002/music/${id}`, {
+      method: "PATCH",
+      headers: {
+        "Content-Type":"application/json"
+      },
+      body: JSON.stringify({favorite: favorite})
+    })
+    .then(res => res.json())
+    .then(data => updateFavorite(data.id, data.favorite))
+   }
+
   return (
     <>
-        <div onClick={()=>handleClick(song.id)} className='music-card'>
-            <img src={song.images} alt={song.title}/>
-            <h4> {song.title} </h4>
-            <h5>{song.subtitle} </h5>
-            {song.favorite ? <p>Remove From Favorites</p> : <p>Add to Favorites</p> }
-            <Link to={`/browse/${id}`}> See Details</Link>
+        <div className='music-card'>
+            <img src={images} alt={title}/>
+            <h4> {title} </h4>
+            <h5>{subtitle} </h5>
+            <div>
+              <label>Favorite?</label>
+              <input 
+                type="checkbox" 
+                onChange={(e)=> handleFavorite(e.target.checked)}
+                checked={favorite}/>
+            </div>
+            <p><Link to={`/browse/${id}`}> See Details</Link></p>
         </div>
     </>    
   )

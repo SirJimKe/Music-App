@@ -30,8 +30,8 @@ function App() {
     e.preventDefault();
     setEndPoint("");
   }
-
-  const handleFavorite = (id, favorite=true) => {
+  const updateFavorite = (id, favorite) => {
+    console.log({id, favorite});
     setSongs(songs.map(song => id === song.id ? {...song, favorite} : song))
   }
   return (
@@ -50,13 +50,13 @@ function App() {
           <Home />
         </Route>
         <Route exact path="/browse" >
-          <Browse songs={songs} handleClick={handleFavorite}/>
+          <Browse songs={songs} updateFavorite={updateFavorite}/>
         </Route>
         <Route path="/browse/:id" >
           <MusicDetails  />
         </Route>
         <Route path="/favorites">
-          <Favorites songs={songs.filter(song=> song.favorite)} handleClick={id=>handleFavorite(id, false)} />
+          <Favorites songs={songs.filter(song=> song.favorite)} updateFavorite={updateFavorite} />
         </Route>
         <Route path="/addmusic">
           <AddMusic />

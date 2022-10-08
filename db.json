@@ -15,7 +15,10 @@
           "adamid": "291697579"
         }
       ],
-      "url": "https://www.shazam.com/track/632531170/unholy"
+      "favorite": true,
+      "song": {
+        "favorite": false
+      }
     },
     {
       "id": 2,
@@ -32,7 +35,10 @@
           "adamid": "217005"
         }
       ],
-      "url": "https://www.shazam.com/track/629204672/hold-me-closer"
+      "favorite": false,
+      "song": {
+        "favorite": true
+      }
     },
     {
       "id": 3,
@@ -45,7 +51,10 @@
           "adamid": "277293880"
         }
       ],
-      "url": "https://www.shazam.com/track/613891396/hold-my-hand"
+      "favorite": true,
+      "song": {
+        "favorite": true
+      }
     },
     {
       "id": 4,
@@ -66,7 +75,7 @@
           "adamid": "5557599"
         }
       ],
-      "url": "https://www.shazam.com/track/618322930/dont-you-worry"
+      "favorite": true
     },
     {
       "id": 5,
@@ -79,7 +88,7 @@
           "adamid": "260414340"
         }
       ],
-      "url": "https://www.shazam.com/track/614204083/i-aint-worried"
+      "favorite": false
     },
     {
       "id": 6,
@@ -92,7 +101,7 @@
           "adamid": "260280462"
         }
       ],
-      "url": "https://www.shazam.com/track/621891796/love-it"
+      "favorite": false
     },
     {
       "title": "STAR WALKIN' (League of Legends Worlds Anthem)",
@@ -104,7 +113,7 @@
           "adamid": "1400730578"
         }
       ],
-      "url": "https://www.shazam.com/track/630520607/star-walkin-league-of-legends-worlds-anthem",
+      "favorite": false,
       "id": 7
     },
     {
@@ -117,7 +126,7 @@
           "adamid": "1419227"
         }
       ],
-      "url": "https://www.shazam.com/track/619940012/cuff-it",
+      "favorite": false,
       "id": 8
     },
     {
@@ -130,7 +139,7 @@
           "adamid": "1259040409"
         }
       ],
-      "url": "https://www.shazam.com/track/629911864/someone-else",
+      "favorite": false,
       "id": 9
     },
     {
@@ -147,7 +156,7 @@
           "adamid": "1614230070"
         }
       ],
-      "url": "https://www.shazam.com/track/591322562/sunroof",
+      "favorite": false,
       "id": 10
     },
     {
@@ -160,7 +169,7 @@
           "adamid": "1043301610"
         }
       ],
-      "url": "https://www.shazam.com/track/631011105/3-tage-am-meer",
+      "favorite": false,
       "id": 11
     },
     {
@@ -173,7 +182,7 @@
           "adamid": "471260289"
         }
       ],
-      "url": "https://www.shazam.com/track/609260140/as-it-was",
+      "favorite": false,
       "id": 12
     },
     {
@@ -186,7 +195,7 @@
           "adamid": "64387566"
         }
       ],
-      "url": "https://www.shazam.com/track/97557561/dark-horse-feat-juicy-j",
+      "favorite": false,
       "id": 13
     },
     {
@@ -200,7 +209,7 @@
           "adamid": "4488522"
         }
       ],
-      "url": "https://www.shazam.com/track/623446622/irrelevant",
+      "favorite": false,
       "id": 14
     },
     {
@@ -213,7 +222,7 @@
           "adamid": "890403665"
         }
       ],
-      "url": "https://www.shazam.com/track/609754120/when-youre-gone",
+      "favorite": false,
       "id": 15
     },
     {
@@ -226,7 +235,7 @@
           "adamid": "376564133"
         }
       ],
-      "url": "https://www.shazam.com/track/621366455/kiss-me",
+      "favorite": false,
       "id": 16
     },
     {
@@ -239,7 +248,7 @@
           "adamid": "129107330"
         }
       ],
-      "url": "https://www.shazam.com/track/619820574/looking-for-love",
+      "favorite": false,
       "id": 17
     },
     {
@@ -256,7 +265,7 @@
           "adamid": "13432258"
         }
       ],
-      "url": "https://www.shazam.com/track/614116156/best-bad-friend",
+      "favorite": false,
       "id": 18
     },
     {
@@ -269,7 +278,7 @@
           "adamid": "1156469544"
         }
       ],
-      "url": "https://www.shazam.com/track/589793470/i-believe",
+      "favorite": false,
       "id": 19
     },
     {
@@ -286,7 +295,7 @@
           "adamid": "14586001"
         }
       ],
-      "url": "https://www.shazam.com/track/10304502/stumblin-in",
+      "favorite": false,
       "id": 20
     },
     {
@@ -299,7 +308,7 @@
           "adamid": "183313439"
         }
       ],
-      "url": "https://www.shazam.com/track/629626360/celestial",
+      "favorite": false,
       "id": 21
     },
     {
@@ -312,7 +321,7 @@
           "adamid": "27373453"
         }
       ],
-      "url": "https://www.shazam.com/track/10748557/hijo-de-la-luna",
+      "favorite": true,
       "id": 22
     },
     {
@@ -325,7 +334,7 @@
           "adamid": "1265164818"
         }
       ],
-      "url": "https://www.shazam.com/track/623878225/million-dollar-baby",
+      "favorite": true,
       "id": 23
     },
     {
@@ -338,7 +347,7 @@
           "adamid": "570136838"
         }
       ],
-      "url": "https://www.shazam.com/track/620295943/2-die-4",
+      "favorite": true,
       "id": 24
     },
     {
@@ -351,7 +360,7 @@
           "adamid": "1470589518"
         }
       ],
-      "url": "https://www.shazam.com/track/621552226/third-wheel",
+      "favorite": false,
       "id": 25
     },
     {
@@ -364,7 +373,7 @@
           "adamid": "1265164818"
         }
       ],
-      "url": "https://www.shazam.com/track/612380796/maybe-youre-the-problem",
+      "favorite": false,
       "id": 26
     },
     {
@@ -377,7 +386,7 @@
           "adamid": "1031397873"
         }
       ],
-      "url": "https://www.shazam.com/track/357149358/idgaf",
+      "favorite": false,
       "id": 27
     },
     {
@@ -390,7 +399,7 @@
           "adamid": "368983470"
         }
       ],
-      "url": "https://www.shazam.com/track/597924447/with-you",
+      "favorite": false,
       "id": 28
     },
     {
@@ -403,7 +412,7 @@
           "adamid": "14589060"
         }
       ],
-      "url": "https://www.shazam.com/track/2906646/please-dont-go",
+      "favorite": false,
       "id": 29
     },
     {
@@ -416,7 +425,7 @@
           "adamid": "35719"
         }
       ],
-      "url": "https://www.shazam.com/track/40270720/accidentally-in-love",
+      "favorite": false,
       "id": 30
     },
     {
@@ -429,7 +438,7 @@
           "adamid": "471260289"
         }
       ],
-      "url": "https://www.shazam.com/track/612684931/late-night-talking",
+      "favorite": false,
       "id": 31
     },
     {
@@ -442,7 +451,7 @@
           "adamid": "471260289"
         }
       ],
-      "url": "https://www.shazam.com/track/612684931/late-night-talking",
+      "favorite": false,
       "id": 32
     },
     {
@@ -455,7 +464,7 @@
           "adamid": "15250294"
         }
       ],
-      "url": "https://www.shazam.com/track/5224014/smalltown-boy",
+      "favorite": false,
       "id": 33
     },
     {
@@ -468,7 +477,7 @@
           "adamid": "63346553"
         }
       ],
-      "url": "https://www.shazam.com/track/40932238/pon-de-replay",
+      "favorite": false,
       "id": 34
     },
     {
@@ -481,7 +490,7 @@
           "adamid": "935727853"
         }
       ],
-      "url": "https://www.shazam.com/track/605312680/bam-bam-feat-ed-sheeran",
+      "favorite": false,
       "id": 35
     },
     {
@@ -498,7 +507,7 @@
           "adamid": "280215834"
         }
       ],
-      "url": "https://www.shazam.com/track/628712770/calm-down",
+      "favorite": false,
       "id": 36
     },
     {
@@ -511,7 +520,7 @@
           "adamid": "260414340"
         }
       ],
-      "url": "https://www.shazam.com/track/605135828/west-coast",
+      "favorite": true,
       "id": 37
     },
     {
@@ -524,7 +533,7 @@
           "adamid": "19585841"
         }
       ],
-      "url": "https://www.shazam.com/track/624746705/auf-auf",
+      "favorite": true,
       "id": 38
     },
     {
@@ -537,7 +546,7 @@
           "adamid": "487277"
         }
       ],
-      "url": "https://www.shazam.com/track/393331/running-up-that-hill-a-deal-with-god",
+      "favorite": true,
       "id": 39
     },
     {
@@ -550,7 +559,7 @@
           "adamid": "1525971355"
         }
       ],
-      "url": "https://www.shazam.com/track/625371562/enough",
+      "favorite": false,
       "id": 40
     },
     {
@@ -563,7 +572,7 @@
           "adamid": "63346553"
         }
       ],
-      "url": "https://www.shazam.com/track/43112744/pon-de-replay-pon-de-club-play-version",
+      "favorite": false,
       "id": 41
     },
     {
@@ -584,7 +593,7 @@
           "adamid": "1451610480"
         }
       ],
-      "url": "https://www.shazam.com/track/633224423/nur-ein-wort",
+      "favorite": false,
       "id": 42
     },
     {
@@ -597,7 +606,7 @@
           "adamid": "1462541757"
         }
       ],
-      "url": "https://www.shazam.com/track/621341063/dont-stop-believin",
+      "favorite": false,
       "id": 43
     },
     {
@@ -610,7 +619,7 @@
           "adamid": "1259040409"
         }
       ],
-      "url": "https://www.shazam.com/track/601678033/sorry",
+      "favorite": false,
       "id": 44
     },
     {
@@ -623,7 +632,7 @@
           "adamid": "14410113"
         }
       ],
-      "url": "https://www.shazam.com/track/631314657/fette-wilde-jahre",
+      "favorite": false,
       "id": 45
     },
     {
@@ -636,7 +645,7 @@
           "adamid": "394295270"
         }
       ],
-      "url": "https://www.shazam.com/track/506004198/middle-of-the-night",
+      "favorite": false,
       "id": 46
     },
     {
@@ -649,7 +658,7 @@
           "adamid": "1293896908"
         }
       ],
-      "url": "https://www.shazam.com/track/596498074/remedy",
+      "favorite": false,
       "id": 47
     },
     {
@@ -662,7 +671,7 @@
           "adamid": "280215834"
         }
       ],
-      "url": "https://www.shazam.com/track/504818477/people-you-know",
+      "favorite": false,
       "id": 48
     },
     {
@@ -679,7 +688,7 @@
           "adamid": "1031397873"
         }
       ],
-      "url": "https://www.shazam.com/track/579595745/cold-heart-pnau-remix",
+      "favorite": true,
       "id": 49
     },
     {
@@ -696,7 +705,7 @@
           "adamid": "1641125397"
         }
       ],
-      "url": "https://www.shazam.com/track/629242848/%D0%BF%D0%BE%D0%B7%D0%B2%D0%BE%D0%BD%D0%B8",
+      "favorite": false,
       "id": 50
     }
   ]

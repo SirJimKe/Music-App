@@ -107,10 +107,12 @@ nav a.active{
 .music-card img {
   max-width: 100%;
 }
-
-.music-card p{
+.music-card input{
+  cursor: pointer;
+}
+.music-card label{
   color: rgba(255,255,255,.5);
-  padding-left: 5px;
+  padding-right: 5px;
   font-style: italic;
 }
 

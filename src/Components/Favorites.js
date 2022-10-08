@@ -1,14 +1,14 @@
 import React from 'react';
 import MusicCard from './MusicCard';
 
-const Favorites = ({songs, handleClick}) => {
+const Favorites = ({songs, updateFavorite}) => {
   const musicList = songs.map((song)=>{
     
     return <MusicCard
       key={song.id}
       song={song}
       id={song.id} 
-      handleClick={handleClick}          
+      updateFavorite={updateFavorite}          
     />
   })
   return (
