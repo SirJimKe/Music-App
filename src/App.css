@@ -90,7 +90,7 @@ nav a.active{
 }
 
 .music-card{
-  height: 420px;
+  height: 500px;
   border: 2px solid rgba(255,255,255,.5);
   padding: 10px;
   text-align: center;
@@ -128,13 +128,13 @@ nav a.active{
 
 .addform form {
   margin-left: 25%;
-  margin-top: 3rem;
+  margin-top: 10px;
 }
 .addform input{
   width: 50%;
   display: block;
   height: 2rem;
-  padding: 5px;
+  padding: 2px;
   justify-content: center;
   cursor: pointer;
 }

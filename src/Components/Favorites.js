@@ -18,4 +18,4 @@ const Favorites = ({songs, updateFavorite}) => {
   )
 }
 
-export default Favorites
+export default Favorites;
