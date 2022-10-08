@@ -14,16 +14,17 @@ const MusicDetails = () => {
     if (!song) return <h2>Loading...</h2>;
 
     const artists = song.artists.map(artist =>{
-        return <p>{artist.alias}</p>
+        return <h4>{artist.alias}</h4>
     })
   return (
     <div className='music-details'>
         <img src={song.images} alt={song.title}/>
         <h2> Title: {song.title} </h2>
-        <h4>Artists Names:</h4>
+        <h3>Artists Names:</h3>
         {artists}
+        <p>...Lyrics will be made available soon...<br/> Stay connected </p>
     </div>
   )
 }
 
-export default MusicDetails
+export default MusicDetails;

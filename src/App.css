@@ -101,7 +101,12 @@ nav a.active{
   padding: 10px;
   text-align: center;
   max-width: fit-content;
-  
+}
+.music-details h4{
+  color: rgba(255,255,255,.5);
+}
+.music-details p{
+  font-style: italic;
 }
 
 .music-card img {
@@ -119,4 +124,30 @@ nav a.active{
 .music-card a{
   color: rgba(255,255,255,.5);
   text-decoration: underline;
+}
+
+.addform form {
+  margin-left: 25%;
+  margin-top: 3rem;
+}
+.addform input{
+  width: 50%;
+  display: block;
+  height: 2rem;
+  padding: 5px;
+  justify-content: center;
+  cursor: pointer;
+}
+.addform button{
+  width: fit-content;
+  height: 2rem;
+  padding: 5px;
+  cursor: pointer;
+  margin: 5px;
+  margin-left: 20%;
+}
+.addform label{
+  padding: 10px;
+  margin-left: 20%;
+  font-size: 1.5rem;
 }

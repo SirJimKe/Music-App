@@ -15,7 +15,7 @@
           "adamid": "291697579"
         }
       ],
-      "favorite": true,
+      "favorite": false,
       "song": {
         "favorite": false
       }
@@ -113,7 +113,7 @@
           "adamid": "1400730578"
         }
       ],
-      "favorite": false,
+      "favorite": true,
       "id": 7
     },
     {
@@ -126,7 +126,7 @@
           "adamid": "1419227"
         }
       ],
-      "favorite": false,
+      "favorite": true,
       "id": 8
     },
     {

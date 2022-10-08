@@ -6,7 +6,7 @@ import Navbar from './Components/Navbar';
 import Home from './Components/Home';
 import Browse from './Components/Browse';
 import Favorites from './Components/Favorites';
-import MusicDetails from './MusicDetails';
+import MusicDetails from './Components/MusicDetails';
 import AddMusic from './Components/AddMusic';
 
 function App() {
