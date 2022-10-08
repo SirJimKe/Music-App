@@ -6,6 +6,7 @@ const Navbar = ({setShow}) => {
     <nav>
       <NavLink to="/browse" onClick={()=>setShow(true)} >Browse</NavLink>
       <NavLink to="/favorites" onClick={()=>setShow(true)}  >Favorites</NavLink>
+      <NavLink to="/addmusic" onClick={()=>setShow(true)}  >Add Music</NavLink>
     </nav>
   )
 }

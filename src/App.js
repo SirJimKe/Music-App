@@ -7,6 +7,7 @@ import Home from './Components/Home';
 import Browse from './Components/Browse';
 import Favorites from './Components/Favorites';
 import MusicDetails from './MusicDetails';
+import AddMusic from './Components/AddMusic';
 
 function App() {
 
@@ -56,6 +57,9 @@ function App() {
         </Route>
         <Route path="/favorites">
           <Favorites songs={songs.filter(song=> song.favorite)} handleClick={id=>handleFavorite(id, false)} />
+        </Route>
+        <Route path="/addmusic">
+          <AddMusic />
         </Route>
       </Switch>
     </div>
