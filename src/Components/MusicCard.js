@@ -6,7 +6,7 @@ const MusicCard = ({ id, song, updateFavorite }) => {
   const { images, title, subtitle, favorite} = song;
 
   const handleFavorite =(favorite) => {
-    fetch(`http://localhost:8002/music/${id}`, {
+    fetch(`https://my-musiq-app.herokuapp.com/music/${id}`, {
       method: "PATCH",
       headers: {
         "Content-Type":"application/json"

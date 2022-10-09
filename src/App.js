@@ -15,7 +15,7 @@ function App() {
   const [endPoint, setEndPoint] = useState('');
 
   useEffect(()=>{
-    fetch(`http://localhost:8002/music?q=${endPoint}`)
+    fetch(`https://my-musiq-app.herokuapp.com/music?q=${endPoint}`)
     .then(response => response.json())
     .then(setSongs);
   }, [endPoint])
