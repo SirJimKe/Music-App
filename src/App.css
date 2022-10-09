@@ -69,11 +69,10 @@ nav a.active{
   margin-block: 1rem;  
   padding: 0.5rem;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   align-items: center;
   gap: 2rem;
   min-height: 100vh;
-  
 }
 
 .home{
@@ -90,12 +89,13 @@ nav a.active{
 }
 
 .music-card{
+  max-width: 400px;
   height: 500px;
   border: 2px solid rgba(255,255,255,.5);
   padding: 10px;
   text-align: center;
-  
 }
+
 .music-details{
   border: 2px solid rgba(255,255,255,.5);
   padding: 10px;
@@ -150,4 +150,19 @@ nav a.active{
   padding: 10px;
   margin-left: 20%;
   font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 900px){
+  .container{
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .music-card{
+    height: 20rem;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .container{
+    grid-template-columns: repeat(2, 1fr);
+  }
 }

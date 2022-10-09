@@ -6,15 +6,17 @@ const MusicDetails = () => {
     const { id } = useParams();
 
     useEffect(()=>{
-        fetch(`http://localhost:8002/music/${id}`)
+        fetch(`https://my-musiq-app.herokuapp.com/music/${id}`)
         .then(response => response.json())
         .then(setSong);
     }, [id])
 
     if (!song) return <h2>Loading...</h2>;
 
+    console.log(song)
+
     const artists = song.artists.map(artist =>{
-        return <h4>{artist.alias}</h4>
+        return <h4><span key={id}></span>{artist}</h4>
     })
   return (
     <div className='music-details'>

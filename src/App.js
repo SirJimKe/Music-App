@@ -7,6 +7,7 @@ import Home from './Components/Home';
 import Browse from './Components/Browse';
 import Favorites from './Components/Favorites';
 import MusicDetails from './Components/MusicDetails';
+import AddMusic from './Components/AddMusic';
 
 function App() {
 
@@ -33,6 +34,10 @@ function App() {
     setSongs(songs.map(song => id === song.id ? {...song, favorite} : song))
   }
 
+  const addSong =(newSong) => {
+    setSongs(...songs, newSong)
+  }
+
   return (
     <div className="App">
       <Header 
@@ -57,7 +62,9 @@ function App() {
         <Route path="/favorites">
           <Favorites songs={songs.filter(song=> song.favorite)} updateFavorite={updateFavorite} />
         </Route>
-
+        <Route path="/addmusic" >
+          <AddMusic addSong={addSong} />
+        </Route>
       </Switch>
     </div>
   );
