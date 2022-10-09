@@ -1,16 +1,17 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
+import { useHistory } from 'react-router-dom';
 
 const AddMusic = ({addSong}) => {
 
   const [images, setImages] = useState("");
   const [title, setTitle] =  useState("");
   const [subtitle, setSubtitle] = useState("");
-  const [artists, setArtists] = useState("Ops! Artists names not available");
+  const [artists, setArtists] = useState(["Ops! Artists name not available."]);
   const [favorite, setFavorite] = useState(true);
 
-  console.log(setArtists);
-  console.log(setFavorite);
+  const history = useHistory();
 
+  console.log(setArtists);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -31,7 +32,7 @@ const AddMusic = ({addSong}) => {
       body: JSON.stringify(musicObj)
     })
     .then(res => res.json())
-    .then(data => addSong(data))
+    .then(data => history.push(`/browse/${data.id}`))
   }
 
   return (
@@ -58,7 +59,13 @@ const AddMusic = ({addSong}) => {
           placeholder='artists e.g. Rihana & Beyonce' 
           onChange={(e) => setSubtitle(e.target.value)}
         />
-        <button className='addform-input' >Add New Music</button>
+        <label htmlFor='checkbox'>Favorite?</label>
+        <input          
+          type="checkbox" 
+          id="favorite"           
+          onChange={(e) => setFavorite(e.target.checked)}
+        />
+        <button className='addform-input' >Add Music</button>
       </form>
     </div>
   )

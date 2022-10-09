@@ -13,10 +13,9 @@ const MusicDetails = () => {
 
     if (!song) return <h2>Loading...</h2>;
 
-    console.log(song)
 
-    const artists = song.artists.map(artist =>{
-        return <h4><span key={id}></span>{artist}</h4>
+    const artists = song.artists.map((artist) =>{
+        return <span key={artist}><h4>{artist}</h4></span>
     })
   return (
     <div className='music-details'>
@@ -25,6 +24,7 @@ const MusicDetails = () => {
         <h3>Artists Names:</h3>
         {artists}
         <p>...Lyrics will be made available soon...<br/> Stay connected </p>
+        <button>Delete</button>
     </div>
   )
 }

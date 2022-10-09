@@ -20,7 +20,7 @@ const MusicCard = ({ id, song, updateFavorite }) => {
   return (
     <>
         <div className='music-card'>
-            <img src={images} alt={title}/>
+            <img src={images} alt="Ops! Nothing to show"/>
             <h4> {title} </h4>
             <h5>{subtitle} </h5>
             <div>

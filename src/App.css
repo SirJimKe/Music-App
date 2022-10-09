@@ -108,6 +108,11 @@ nav a.active{
 .music-details p{
   font-style: italic;
 }
+.music-details button{
+  padding: 3px;
+  font-size: 1rem;
+  cursor: pointer;
+}
 
 .music-card img {
   max-width: 100%;
