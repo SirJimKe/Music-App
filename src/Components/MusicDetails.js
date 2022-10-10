@@ -1,9 +1,11 @@
 import React, {useEffect, useState} from 'react';
 import { useParams } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 
 const MusicDetails = ({deleteSong}) => {
     const [song, setSong] = useState(null);
     const { id } = useParams();
+    const history = useHistory();
 
     useEffect(()=>{
         fetch(`https://my-musiq-app.herokuapp.com/music/${id}`)
@@ -17,6 +19,7 @@ const MusicDetails = ({deleteSong}) => {
       fetch(`https://my-musiq-app.herokuapp.com/music/${id}`, {
         method: "DELETE"
       })
+      .then(() => history.push('/browse'))
       deleteSong(id)
     }
 
