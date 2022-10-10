@@ -34,8 +34,8 @@ function App() {
     setSongs(songs.map(song => id === song.id ? {...song, favorite} : song))
   }
 
-  const addSong =(newSong) => {
-    setSongs(...songs, newSong)
+  const deleteSong =(id) => {
+    setSongs(songs.filter(song => song.id !== id))
   }
 
   return (
@@ -57,13 +57,13 @@ function App() {
           <Browse songs={songs} updateFavorite={updateFavorite} />
         </Route>
         <Route path="/browse/:id" >
-          <MusicDetails  />
+          <MusicDetails deleteSong={deleteSong} />
         </Route>
         <Route path="/favorites">
           <Favorites songs={songs.filter(song=> song.favorite)} updateFavorite={updateFavorite} />
         </Route>
         <Route path="/addmusic" >
-          <AddMusic addSong={addSong} />
+          <AddMusic />
         </Route>
       </Switch>
     </div>

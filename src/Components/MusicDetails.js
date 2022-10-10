@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import { useParams } from 'react-router-dom';
 
-const MusicDetails = () => {
+const MusicDetails = ({deleteSong}) => {
     const [song, setSong] = useState(null);
     const { id } = useParams();
 
@@ -12,6 +12,13 @@ const MusicDetails = () => {
     }, [id])
 
     if (!song) return <h2>Loading...</h2>;
+
+    const handleDelete = () => {
+      fetch(`https://my-musiq-app.herokuapp.com/music/${id}`, {
+        method: "DELETE"
+      })
+      deleteSong(id)
+    }
 
 
     const artists = song.artists.map((artist) =>{
@@ -24,7 +31,7 @@ const MusicDetails = () => {
         <h3>Artists Names:</h3>
         {artists}
         <p>...Lyrics will be made available soon...<br/> Stay connected </p>
-        <button>Delete</button>
+        <button onClick={handleDelete}>Delete</button>
     </div>
   )
 }
